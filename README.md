@@ -177,6 +177,11 @@ python evaluate.py --message "..." --verbose
 ---
 
 ## Future Improvements
+## Project Status
+
+This is an actively developed early-stage prototype. The current version includes a functioning API, weighted risk scoring engine, fraud classification framework, evaluation script, and a curated dataset of scam-style messages relevant to Nigeria and West Africa.
+
+Current development is focused on improving detection robustness, expanding multilingual coverage, and evaluating lightweight approaches for scalable fraud detection in low-resource environments.
 
 - Add a small trained text classifier (logistic regression or SVM on TF-IDF) as a second layer — rules + model ensemble would improve recall significantly
 - Add Yoruba/Hausa/French pattern coverage
