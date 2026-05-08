@@ -22,6 +22,16 @@ This project explores lightweight AI safety interventions for detecting and flag
 4. The API returns structured JSON with score, level, categories, and explanation
 
 The system is intentionally rule-based at this early stage to prioritize interpretability, rapid iteration, and safety evaluation before introducing learned models. Rules are readable, auditable, and tunable without any ML infrastructure.
+## Quick Demo
+
+### Example Input
+"Your Access Bank account has been suspended. Send your OTP immediately or your account will be closed."
+
+### Example Output
+- Risk Score: 87/100  
+- Risk Level: High  
+- Categories: bank_impersonation, otp_harvesting, urgency_manipulation  
+- Explanation: Multiple high-confidence fraud patterns detected including OTP request and urgency based manipulation.
 
 ## AI Safety Relevance
 
