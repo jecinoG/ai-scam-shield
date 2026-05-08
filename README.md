@@ -83,8 +83,7 @@ ai-scam-shield/
 **Requirements:** Python 3.10+
 
 ```bash
-git clone https://github.com/yourname/ai-scam-shield.git
-cd ai-scam-shield
+git clone https://github.com/jecinoG/ai-scam-shield.git
 
 pip install -r requirements.txt
 
