@@ -35,10 +35,11 @@ The system is intentionally rule-based at this early stage to prioritize interpr
 
 ## AI Safety Relevance
 
-This system is designed as a lightweight intervention against AI-assisted social engineering and fraud amplification. As generative models make scam messages more convincing, accessible, and multilingual, there is a growing need for simple, deployable detection systems that can operate in low-resource environments.
+This system is designed as a lightweight defensive tool against AI-assisted social engineering and fraud amplification. As generative models make scam messages more convincing, scalable, and multilingual, there is a growing need for simple, deployable detection systems that can operate in low-resource environments.
 
-This prototype explores early-stage techniques for identifying and categorizing deceptive intent in real-world messaging contexts, with a focus on underserved regions where formal fraud detection tools are limited.
+Unlike black-box detection systems, this prototype prioritizes interpretability, allowing users and researchers to understand which signals triggered a risk classification. This makes it useful for both practical fraud prevention and AI safety evaluation research.
 
+The project focuses on early-stage detection of deceptive intent in real-world messaging contexts, particularly in underserved regions where formal fraud monitoring infrastructure is limited.
 ---
 
 ## Features
