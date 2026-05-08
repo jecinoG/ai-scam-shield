@@ -1,6 +1,6 @@
 # AI Scam Shield
 
-Lightweight fraud detection for WhatsApp-style messages common in Nigeria and West Africa.
+AI safety prototype for detecting AI-enabled fraud and social engineering attempts in WhatsApp-style messages common in Nigeria and West Africa.
 
 Analyzes a text message and returns a risk score, risk level, fraud categories, and a plain-English explanation.
 
@@ -8,9 +8,9 @@ Analyzes a text message and returns a risk score, risk level, fraud categories, 
 
 ## Problem Statement
 
-Scam messages delivered via WhatsApp and SMS remain a major fraud vector across Nigeria and West Africa. Common tactics include bank impersonation, fake investment pitches, OTP harvesting, and fake job offers — often mixed with urgency manipulation and written in English or Nigerian Pidgin. Most people have no tool to quickly check whether a message they received is likely a scam.
+AI-enabled social engineering and scam messages delivered via WhatsApp and SMS remain a major and growing safety risk in Nigeria and West Africa. Common tactics include bank impersonation, fake investment pitches, OTP harvesting, and fake job offers — often mixed with urgency manipulation and written in English or Nigerian Pidgin. Most people have no tool to quickly check whether a message they received is likely a scam.
 
-This project is a basic but functional rule-based detection system that runs locally or on a small server. It is not ML-based (no training required) and works out of the box.
+This project explores lightweight AI safety interventions for detecting and flagging such content in real time.
 
 ---
 
@@ -21,7 +21,13 @@ This project is a basic but functional rule-based detection system that runs loc
 3. Matched signals are passed to the **risk classifier** (`risk_classifier.py`), which normalizes the cumulative weight into a 0–100 score and buckets it into low/medium/high
 4. The API returns structured JSON with score, level, categories, and explanation
 
-The system is intentionally rule-based at this stage. Rules are readable, auditable, and tunable without any ML infrastructure.
+The system is intentionally rule-based at this early stage to prioritize interpretability, rapid iteration, and safety evaluation before introducing learned models. Rules are readable, auditable, and tunable without any ML infrastructure.
+
+## AI Safety Relevance
+
+This system is designed as a lightweight intervention against AI-assisted social engineering and fraud amplification. As generative models make scam messages more convincing, accessible, and multilingual, there is a growing need for simple, deployable detection systems that can operate in low-resource environments.
+
+This prototype explores early-stage techniques for identifying and categorizing deceptive intent in real-world messaging contexts, with a focus on underserved regions where formal fraud detection tools are limited.
 
 ---
 
@@ -37,7 +43,7 @@ The system is intentionally rule-based at this stage. Rules are readable, audita
 
 ---
 
-## Fraud Categories Detected
+## Detected Risk Categories (AI Safety Taxonomy)
 
 | Category | Examples |
 |---|---|
